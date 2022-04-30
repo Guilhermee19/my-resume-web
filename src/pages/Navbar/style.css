@@ -1,0 +1,27 @@
+main{
+    position: fixed;
+    width: 80%;
+    height: 50px;
+    margin: 0 10%;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #131313;
+}
+
+.name{
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+.name span{
+    color: rgb(2, 112, 255);
+}
+
+.options span{
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+}
