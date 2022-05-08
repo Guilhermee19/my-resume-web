@@ -1,21 +1,65 @@
-.card_project{
-    width: 100%;
-    height: 225px;
-    background-color: rgb(2, 112, 255);
-    border-radius: 10px;
-    padding: 2px;
-    box-shadow: 3px 3px 5px rgb(0, 55, 126);
+.card_project {
+    position: relative;
+    width: calc(100% - 105px);
+    height: 100%;
+    margin: 0 auto 10px auto;
+    /* height: 220px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card_image{
+.card_image {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+.card_project .info{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: all .2s;
+}
+.card_project article {
+    position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif !important;
+    color: white;
+    font-weight: 600;
 }
 
-.title{
-    width: 80%;
-    margin: 0 auto 20px;
-    text-align: center;
+.card_project figure{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0 !important;
+    height: auto;
+    padding: 0 !important;
+    z-index: 12;
 }
+
+/* .card_project .info:hover{
+    opacity: 1 !important;
+    transition: all .2s;
+} */

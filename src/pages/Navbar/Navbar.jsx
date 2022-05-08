@@ -12,9 +12,9 @@ function Navbar() {
         <main>
             <h1 className="name"> <span>Guilherme</span> Santana </h1>            
             <div className="options">
-                <span onClick={scrollTop}>Inicial</span>
-                <span>Sobre</span>
-                <span>Projetos</span>
+                <nav onClick={scrollTop}>Inicial</nav>
+                <nav>Sobre</nav>
+                <nav>Projetos</nav>
             </div>
         </main>
     );
